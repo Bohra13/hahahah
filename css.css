@@ -1,0 +1,193 @@
+*{margin: 0px;
+    
+padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+
+.navbar{
+display: flex;
+
+justify-content: space-between;
+background-color:#d78ead;
+
+position: sticky;
+top: 0;
+z-index: 1;
+cursor: pointer;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+.navlogo{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 20%;
+    color: rgb(45, 20, 101);
+
+   }
+.navlist{padding-left: 25px;
+    display: flex;
+list-style: none;
+justify-content: space-between;
+width: 400px;
+
+
+
+}
+.navlist li{padding-top: 10px;}
+.navlist li a{text-decoration: none;
+    color: rgb(45, 20, 101);
+}.navlist li a:hover{text-decoration: none;
+    color: blue ;
+
+}
+.rightnav{
+    padding-top: 7px;
+    padding-right: 19px;
+    width: 210px;
+    
+}
+button{cursor: pointer;
+    
+    font-size: 16px;
+    
+    border-radius: 10px;
+    border: solid 2px;
+    padding: 3px;}
+.btnsm{
+    color: black;
+}
+.btnn{
+    background-color:transparent;
+    font-size: 23px;
+}
+#search{
+    font-size: 14px;
+    border: 2px solid blue;
+    border-radius: 8px;
+}
+.sectionfirst{
+    background: url("/Gaming.jpg") #3f1e5d;
+    background-blend-mode: screen;
+background-size: cover; 
+height: 110vh;
+
+}
+p{
+    font-size: 32px;
+}
+
+#mainbox{height: 80%;
+    width: 78%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items:center ;  
+
+}
+.bigimg{
+    border: 10px chocolate;
+    border-radius: 250px;
+    width: 300px;
+    height: 300px;
+animation: rotate 2s  0s infinite;
+animation-timing-function: linear;
+}
+
+#smimg{height: 220px;
+    width: 320px;
+    
+}
+.sectag{
+   font-family: 'Ubuntu', sans-serif;
+}
+.subtag{
+    font-family: 'Jomhuria', cursive;
+    font-size: 20px;
+    
+}
+.main{display:flex;
+    justify-content: center;
+    margin: 90px 82px;
+align-items: center;}
+.main2
+{
+    flex-direction: row-reverse;
+}
+.textcenter
+{
+  padding-right: 15px;
+    text-align: center;
+} 
+.form
+{    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+}
+.input1{
+    width: 500px;
+    font-size: 20px;
+    border-radius: 10px;
+    
+    margin: 20px;
+    border:04px solid gray;
+
+}
+.firsthalf{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 30px;
+}
+.burger{
+    position: absolute;
+right: 12px;
+top: 2px;
+cursor: pointer;
+display: none;
+}
+.line{
+    display: block;
+    width: 27px;
+    height: 4px;
+margin: 2.2px 4px;
+background-color: white;
+}
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+
+
+  @media  screen and (max-width:800px) {
+      .navlist{flex-direction: column;
+    align-items: center;}
+.navbar{align-items: center;
+    flex-direction: column;
+}
+.rightnav{
+    display: flex;
+flex-direction: column;
+align-items: center;
+position: relative;
+left: 20px;
+}
+.burger{display: block;
+ 
+}
+  
+ .navheight{
+     height: 40px;
+ }
+ .visual{
+display:none; }
+ .bigimg{
+    width: 150px;
+    height: 150px;
+    
+ }.input1{
+     width: 60%;
+ }
+ .section div{
+     flex-direction: column;
+     margin: 5px 5px;
+ }
+  }
